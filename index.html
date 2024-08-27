@@ -1,35 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-mx">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de William Yapuchura</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header>
-        <img src="images.jpeg" alt="banner de programación" width= 800 height="200">
+    <header class="header">
+        <nav class="header__menu">
+            <a class="header__menu__link" href="index.html">Home</a>
+            <a class="header__menu__link" href="about.html">Sobre mí</a>
+            <a class="header__menu__link" href="curriculum.html">Mi Trayectoria</a>
+        </nav>
     </header>
+    
+    <main class="presentacion">
+        <section class="presentacion__contenido">
+            <h1 class="presentacion__contenido__titulo"> 
+                Diseño, desarrollo y optimización web, <strong class="titulo__destaque"> todo lo que tu negocio necesita </strong> 
+                para destacar en el mundo digital.
+            </h1>
+            <p class="presentacion__contenido__texto"> 
+                ✍️ "No se puede simplemente abrir un sitio web y esperar a que la gente lo inunde. Si realmente
+                deseas tener éxito, debes generar tráfico" (Joel Anderson). <br>
+                🙌 ¡Hola! Soy William Yapuchura, apasionado por la programación, el diseño y la optimización web. 
+                Mi misión es ayudar a que tu negocio despegue en el mundo digital, transformando cada visita en una oportunidad de venta. <br>
+                🚀 ¿Listo para llevar tu negocio al siguiente nivel?
+            </p>
+            <div class="presentacion__enlaces">
+                <h2 class="presentacion__enlaces__subtitulo"> Accede a mis redes </h2>
+                <a class="presentacion__enlaces__link" href="https://linkedin.com/in/william-daniel-yapuchura-yapuchura">
+                    <img src="./assets/linkedin.png" alt="logo de linkedin" width="30" height="30">Linkedin
+                </a>
 
-    <main>
-        <h1> <strong>William Yapuchura</strong> un poco sobre mi... </h1>
-        <img src="yo.jpeg" alt="mi foto" width="350" height="300">
-        <img src="frase.avif" alt="frase que me describe" width="350" height="300">
-        <p> Amante del aprendizaje, muy pronto diseñador y desarrollador web.
-            Espero poder ayudarte en un futuro cercano.
-        </p>
-        <h2>¡Buscame en mis redes!</h2>
-        <img src="linkedin.png" alt="logo de linkedin" width="20" height="20">
-        <a href="www.linkedin.com/in/william-daniel-yapuchura-yapuchura">linkedin</a> <br>
-        <img src="github.png" alt="logo de github" width="20" height="20">
-        <a href="https://github.com/WilliamYapuchura">GitHub</a>
-
+                <a class="presentacion__enlaces__link" href="https://github.com/WilliamYapuchura">
+                    <img src="./assets/github.png" alt="logo de github" width="30" height="30">GitHub
+                </a>
+            </div>
+        </section>
+        <img class="presentacion__imagen" src="./assets/yo.jpeg" alt="mi foto" width="350" height="300">
     </main>
 
-    <footer>
-        <h2>¡No dudes en contactarme!</h2>
-        <p> Contacto telefónico: +930425414</p>
-        <p> Correo: WilliamYapuchura@hotmail.com</p>
+    <footer class="footer">
+        <p>Desarrollado por William Yapuchura</p>
     </footer>
 </body>
 </html>
