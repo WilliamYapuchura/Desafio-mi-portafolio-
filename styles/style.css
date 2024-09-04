@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
-    --color-primario: #edeef2;
-    --color-secundario: #1C77C3;
-    --color-terciario: #39A9DB;
-    --color-cuaternario: #000000;
+    --color-primario: #EAF6FF;
+    --color-secundario: #005A9C;
+    --color-terciario: #007BFF;
+    --color-cuaternario: #2C3E50;
+    --color-quinario: #b1e9f7;
 
     --fuente-montserrat: "Montserrat", sans-serif;
-    --fuente-krona: "Krona One", sans-serif;
+    --fuente-Poppins: "Poppins", sans-serif;
 }
 
 *{
@@ -52,14 +54,14 @@ body{
 }
 
 .presentacion__contenido__titulo{
-    font-size: 2rem;
-    font-family: var(--fuente-krona);
+    font-size: 2.5rem;
+    font-family: var(--fuente-montserrat);
     color: var(--color-secundario);
 }
 
 .presentacion__contenido__subtitulo{
     font-size: 1.5rem;
-    font-family: var(--fuente-krona);
+    font-family: var(--fuente-montserrat);
     color: var(--color-terciario);
 }
 
@@ -69,7 +71,7 @@ body{
 
 .presentacion__contenido__texto{
     font-size: 1.5rem;
-    font-family: var(--fuente-montserrat);
+    font-family: var(--fuente-Poppins);
 }
 
 .presentacion__enlaces{
@@ -81,9 +83,9 @@ body{
 }
 
 .presentacion__enlaces__subtitulo{
-    font-family: var(--fuente-krona);
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.8rem;
+    font-weight: 600;
     color: var(--color-secundario);
 }
 
@@ -104,7 +106,7 @@ body{
 }
 
 .presentacion__enlaces__link:hover{
-    background-color: var(--color-terciario);
+    background-color: var(--color-quinario);
 }
 
 .presentacion__imagen{
@@ -114,12 +116,26 @@ body{
     margin: 5%;
 }
 
+.bloque{
+    display: flex;
+    flex-direction: column; /* Cambio para alinear las imágenes verticalmente */
+    align-items: center; /* Centrar imágenes horizontalmente */
+    gap: 100px; /* Ajusta el espacio entre las imágenes */
+}
+
+.bloque__imagen{
+    width: 100%; /* Ajusta el ancho de las imágenes */
+    max-width: 350px; /* Ajusta el ancho máximo para que no sean demasiado grandes */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    border-radius: 10px; /* Ajusta el radio del borde */
+}
+
 .footer{
     background-color: var(--color-terciario);
     padding: 24px;
     color: var(--color-primario);
     text-align: center;
-    font-family: var(--fuente-krona);
+    font-family: var(--fuente-montserrat);
     font-size: 1.5rem;
     font-weight: 400;
 }
